@@ -7,30 +7,35 @@ body {
 }
 
 header {
-    position:relative;
+    position: relative;
     top: 0;
     left: 0;
     width: 90%;
-    z-index: 1000; /* Para asegurar que el encabezado esté sobre otros elementos */
+    z-index: 1000;
+    /* Para asegurar que el encabezado esté sobre otros elementos */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1A1A1A; /* Color de fondo del encabezado */
+    background-color: #1A1A1A;
+    /* Color de fondo del encabezado */
     padding: 10px 5%;
     border: 0px;
     border-bottom: 0.4rem;
-    border-color:#2F27CE;
+    border-color: #2F27CE;
     border-style: solid;
 }
 
 header h1 {
     margin: 0;
-    color: #fff; /* Color del texto del título */
+    color: #fff;
+    /* Color del texto del título */
 }
 
-header > form    {
-    flex-grow: 1; /* Para que el formulario ocupe todo el espacio disponible */
-    text-align: center; /* Para centrar el formulario */
+header>form {
+    flex-grow: 1;
+    /* Para que el formulario ocupe todo el espacio disponible */
+    text-align: center;
+    /* Para centrar el formulario */
 }
 
 input[type="text"] {
@@ -38,7 +43,8 @@ input[type="text"] {
     border: none;
     border-radius: 5px;
     margin-right: 5px;
-    width: 200px; /* Ancho del campo de entrada */
+    width: 200px;
+    /* Ancho del campo de entrada */
 }
 
 button {
@@ -62,55 +68,66 @@ nav ul li {
 }
 
 nav ul li:first-child {
-    margin-left: 0; /* Eliminar el margen izquierdo del primer elemento de la lista */
+    margin-left: 0;
+    /* Eliminar el margen izquierdo del primer elemento de la lista */
 }
 
 nav ul li a {
-    text-decoration: none; /* Quitar subrayado del enlace */
-    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none;
+    /* Quitar subrayado del enlace */
+    color: #fff;
+    /* Color del texto de los enlaces */
 }
 
 main {
     margin-bottom: 80px;
-    padding-top: 60px; /* Ajusta según la altura del encabezado para evitar que el contenido se superponga */
+    /* Ajusta según la altura del encabezado para evitar que el contenido se superponga */
 }
 
 footer {
-    background-color: #1A1A1A; 
-    color: white; 
-    text-align: center; 
-    padding: 10px; 
-    position: fixed; 
+    background-color: #1A1A1A;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    border-width: 0.3rem 0rem 0rem 0rem; /* Grosor de bordes */
+    border-width: 0.3rem 0rem 0rem 0rem;
+    /* Grosor de bordes */
     border-style: solid;
     border-color: #2F27CE;
 
 }
 
 .imagen-contenedor {
-    border: 10px solid #ccc; /* Borde sólido y color gris */
-    padding: 10px; /* Espacio interno alrededor de la imagen */
-    display: inline-block; /* Mostrar como bloque en línea */
+    border: 10px solid #ccc;
+    /* Borde sólido y color gris */
+    padding: 10px;
+    /* Espacio interno alrededor de la imagen */
+    display: inline-block;
+    /* Mostrar como bloque en línea */
 }
 
 /* Estilos para la imagen dentro del contenedor */
 .imagen-contenedor img {
-    width: 100%; /* Ajustar el ancho de la imagen al contenedor */
-    height: auto; /* Mantener la proporción de aspecto */
-    display: block; /* Evitar espacios adicionales debajo de la imagen */
+    width: 100%;
+    /* Ajustar el ancho de la imagen al contenedor */
+    height: auto;
+    /* Mantener la proporción de aspecto */
+    display: block;
+    /* Evitar espacios adicionales debajo de la imagen */
 }
 
-img{
+img {
     max-width: 100%;
     max-height: 200px;
 }
-div>.columnas{
+
+div>.columnas {
     padding: 0%;
 }
 
-.columnas> ul{
+.columnas>ul {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
@@ -124,23 +141,23 @@ div>.columnas{
     margin-right: 0.5rem;
 }
 
-li{
+li {
     list-style: none;
 }
 
 
-div > h3 {
+div>h3 {
     text-align: center;
     color: #fff;
     text-decoration: underline;
 }
 
-section > h4 {
+section>h4 {
     text-align: center;
     margin: 40px 20px 20px 20px;
 }
 
-.aboutCard{
+.aboutCard {
     margin: 4rem;
     border: 2px;
     border-color: black;
@@ -149,6 +166,8 @@ section > h4 {
 }
 
 .columnas>ul>li {
+    display: flex;
+    flex-direction: column;
     border: 2px;
     border-style: solid;
     border-color: #2F27CE;
@@ -174,11 +193,25 @@ section > h4 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body > h1{
+body>h1 {
     text-align: center;
     color: #DDDBFF;
 }
-body > section > h2{
+
+body>section>h2 {
     text-align: center;
     color: #DDDBFF;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.carritoAdd{
+    justify-self: flex-end;
+    width: 100%;
+}
+
+.descrip{
+    flex: 1;
 }
