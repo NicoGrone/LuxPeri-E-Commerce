@@ -7,23 +7,19 @@
     <title>Lux Peri</title>
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/contact.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/carritoCompra.css">
+    <link rel="icon" href="media/favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <h1>LuxPeri</h1>
-        <form action="#" method="get" class="formsearch">
-            <input type="text" name="search" placeholder="Buscar...">
-            <button type="submit">Buscar</button>
-        </form>
+        <img src="media/banner.png" alt="banner">
         <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/productos.html">Productos</a></li>
-                <li><a href="/about.html">Sobre nosotros</a></li>
-                <li><a href="/contact.html">Contacto</a></li>
-            </ul>
+            <a href="/index.html" class="buttonNav button">Inicio</a>
+            <a href="/productos.html" class="buttonNav button">Productos</a>
+            <a href="/about.html" class="buttonNav button">Sobre nosotros</a>
+            <a href="/contact.html" class="buttonNav button">Contacto</a>
+            <button class="buttonNav" id="cartButton">Carrito de Compras</button>
         </nav>
     </header>
 
@@ -41,17 +37,41 @@
                 <input type="email" id="email" name="email" placeholder="Ingrese mail..." required>
 
                 <label for="phone">Número de Teléfono:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Ingrese numero de telefono..." required>
-
-                <label for="message" >Mensaje:</label>
+                <div class="phone-input">
+                    <select id="countryCode" name="countryCode" required>
+                        <option value="">+1 (EE.UU.)</option>
+                        <option value="">+34 (España)</option>
+                        <option value="">+52 (México)</option>
+                        <option value="">+44 (Reino Unido)</option>
+                        <option value="">+49 (Alemania)</option>
+                        <option value="">+34 (Argentina)</option>
+                    </select>
+                    <input type="tel" id="phone" name="phone" placeholder="Ingrese numero de telefono..." required>
+                </div>
+                <label for="message">Mensaje:</label>
                 <textarea id="message" name="message" placeholder="Ingrese su mensaje..." required></textarea>
-
+                <label>
+                    <input type="checkbox" name="newsletter">
+                    Quiero suscribirme al boletín informativo
+                </label>
                 <button type="submit" class="botonEnviar">Enviar</button>
             </form>
             <div id="formResponse"></div>
         </div>
         <script src="/js/scriptContact.js"></script>
+        <script src="/js/scriptCarrito.js"></script>
     </main>
+
+    <div id="cartPopup" class="cart-popup">
+        <div class="cart-content">
+            <span class="close-btn" id="closeCart">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems">
+            </ul>
+            <p id="totalPrice">Total: $0.00</p>
+            <button id="checkoutButton">Proceder al Pago</button>
+        </div>
+    </div>
 
     <footer>
         <p>Derechos Reservados &copy; 2024</p>

@@ -31,6 +31,7 @@ label {
     border: 3px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 .botonEnviar {
@@ -57,4 +58,47 @@ label {
 main {
     display: flex;
     justify-content: center;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.phone-input {
+    display: flex;
+}
+
+.phone-input select {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.phone-input input {
+    width: 70%;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+label a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+label a:hover {
+    text-decoration: underline;
+}
+
+#countryCode{
+
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }

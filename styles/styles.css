@@ -38,6 +38,13 @@ header>form {
     /* Para centrar el formulario */
 }
 
+.buttonNav{
+    font-size: 1rem;
+    color: white;
+    font-weight:bold;
+    text-decoration: none;
+}
+
 input[type="text"] {
     padding: 5px 10px;
     border: none;
@@ -48,35 +55,34 @@ input[type="text"] {
 }
 
 button {
-    padding: 5px 10px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    background-color: #2F27CE;
-    color: #FFFFFF;
+    background-color: #007bff;
     cursor: pointer;
+    border-radius: 4px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+
+
+button:hover {
+    background-color: #5a53db;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #5a53db;
+}
+
+nav{
     display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li:first-child {
-    margin-left: 0;
-    /* Eliminar el margen izquierdo del primer elemento de la lista */
-}
-
-nav ul li a {
-    text-decoration: none;
-    /* Quitar subrayado del enlace */
-    color: #fff;
-    /* Color del texto de los enlaces */
+    gap: 30px;
 }
 
 main {
@@ -133,18 +139,13 @@ div>.columnas {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    gap: 40px;
+    gap: 30px;
     text-align: center;
     padding-inline-start: 0%;
     padding-inline-end: 0%;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
-
-li {
-    list-style: none;
-}
-
 
 div>h3 {
     text-align: center;
@@ -171,7 +172,7 @@ section>h4 {
     border: 2px;
     border-style: solid;
     border-color: #2F27CE;
-    padding: 1em 1em 1em;
+    padding: 0.5em 0.5em 0.5em;
     color: black;
     background-color: white;
     list-style: none;
@@ -190,7 +191,6 @@ section>h4 {
     text-align: center;
     border-radius: 25px;
     font-size: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body>h1 {
@@ -207,11 +207,12 @@ body>section>h2 {
     text-align: center;
 }
 
-.carritoAdd{
-    justify-self: flex-end;
-    width: 100%;
-}
+
 
 .descrip{
     flex: 1;
+}
+
+.add-to-cart {
+    font-weight: bold;
 }
