@@ -161,9 +161,10 @@ section>h4 {
 .aboutCard {
     margin: 4rem;
     border: 2px;
-    border-color: black;
+    border-color: #2F27CE;
     border-style: solid;
     background-color: #DDDBFF;
+    border-radius: 25px;
 }
 
 .columnas>ul>li {
@@ -172,6 +173,7 @@ section>h4 {
     border: 2px;
     border-style: solid;
     border-color: #2F27CE;
+    border-radius: 10px;
     padding: 0.5em 0.5em 0.5em;
     color: black;
     background-color: white;
