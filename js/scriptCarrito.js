@@ -57,6 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     checkoutButton.addEventListener('click', () => {
         alert('Procediendo al pago...');
-        // Aquí podrías redirigir a la página de pago
+     
     });
 });
